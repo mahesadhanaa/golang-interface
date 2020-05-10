@@ -1,7 +1,7 @@
 package main
 
 import (
-	data "github.com/mahesadhanaa/golang-interface/read"
+	data "github.com/mahesadhanaa/golang-interface/read/data"
 )
 
 func main() {

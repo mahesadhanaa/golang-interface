@@ -1,10 +1,10 @@
 package data
 
-import "fmt"
+import (
+	"fmt"
 
-type ReadInterface interface {
-	Read() (string, error)
-}
+	readinterface "github.com/mahesadhanaa/golang-interface/read"
+)
 
 type ReadData struct{}
 
@@ -12,11 +12,11 @@ func (r *ReadData) Read() (string, error) {
 	return "mahesadhana is a ", nil
 }
 
-func NewReadData() ReadInterface {
+func NewReadData() readinterface.ReadInterface {
 	return &ReadData{}
 }
 
-func Add(r ReadInterface) {
+func Add(r readinterface.ReadInterface) {
 	write, _ := r.Read()
 	fmt.Printf("%sSite Reliability Engineer\n", write)
 }
