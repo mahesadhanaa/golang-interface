@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	data "github.com/mahesadhanaa/golang-interface/read"
+)
 
 func main() {
-	fmt.Println("test")
+	reader := data.NewReadData()
+	data.Add(reader)
 }
