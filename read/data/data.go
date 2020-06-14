@@ -18,5 +18,5 @@ func NewReadData() readinterface.ReadInterface {
 
 func Add(r readinterface.ReadInterface) {
 	write, _ := r.Read()
-	fmt.Printf("%sSite Reliability Engineer\n", write)
+	fmt.Printf("%sDevops Engineer\n", write)
 }
